@@ -809,7 +809,7 @@ async def settings(client, message):
             [
                 InlineKeyboardButton(
                     'Aᴜᴛᴏ-Dᴇʟᴇᴛᴇ',
-                    callback_data=f'setgs#auto_delete#{settings["auto_delete"]}#{grp_id}',
+                    callback_data=f'setgs#auto_delete#{settings.get("auto_delete", True)}#{grp_id}',
                 ),
                 InlineKeyboardButton(
                     '10 Mɪɴs' if settings["auto_delete"] else '✘ Oғғ',
