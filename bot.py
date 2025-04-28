@@ -52,7 +52,7 @@ from pymongo import MongoClient, UpdateOne
 
 # MongoDB Connection from info.py
 client = MongoClient(DATABASE_URI)   # Using the MONGO_DB_URI variable from info.py
-db = client'moxi_movies']           # Using the MONGO_DB_NAME from info.py
+db = client['moxi_movies']           # Using the MONGO_DB_NAME from info.py
 collection = db['Telegram_files']    # Using the MONGO_COLLECTION from info.py
 
 OWNER_ID = 6476946240  # Replace with your Telegram ID if not in info.py
