@@ -1,4 +1,3 @@
-
 # Don't Remove Credit @VJ_Botz
 # Subscribe YouTube Channel For Amazing Bot @Tech_VJ
 # Ask Doubt on telegram @KingVJ01
@@ -33,9 +32,9 @@ logging.getLogger().setLevel(logging.INFO)
 logging.getLogger("pyrogram").setLevel(logging.ERROR)
 logging.getLogger("cinemagoer").setLevel(logging.ERROR)
 
-from pyrogram import Client, idle
+from pyrogram import Client, filters, idle
 from database.users_chats_db import db
-from info import *
+from info import *  # Import your info.py variables here
 from utils import temp
 from typing import Union, Optional, AsyncGenerator
 from Script import script 
@@ -48,11 +47,52 @@ from TechVJ.bot import TechVJBot
 from TechVJ.util.keepalive import ping_server
 from TechVJ.bot.clients import initialize_clients
 
+# ADD THESE IMPORTS for MongoDB
+from pymongo import MongoClient, UpdateOne
+
+# MongoDB Connection from info.py
+client = MongoClient(DATABASE_URI)   # Using the MONGO_DB_URI variable from info.py
+db = client'moxi_movies']           # Using the MONGO_DB_NAME from info.py
+collection = db['Telegram_files']    # Using the MONGO_COLLECTION from info.py
+
+OWNER_ID = 6476946240  # Replace with your Telegram ID if not in info.py
+
+# CAPTION REMOVAL COMMAND
+@TechVJBot.on_message(filters.command("removecaption") & filters.user(OWNER_ID))
+async def fast_remove_caption(client, message):
+    msg = await message.reply("Starting fast removal of `caption` fields... Please wait...")
+
+    batch_size = 1000
+    total_modified = 0
+    total_docs = collection.count_documents({"caption": {"$exists": True}})
+    removed_count = 0
+
+    if total_docs == 0:
+        await msg.edit_text("No documents with captions found!")
+        return
+
+    await msg.edit_text(f"Removing captions... {removed_count}/{total_docs} (0%) done...")
+
+    while True:
+        docs = list(collection.find({"caption": {"$exists": True}}, {"_id": 1}).limit(batch_size))
+        if not docs:
+            break
+
+        operations = [UpdateOne({"_id": doc["_id"]}, {"$unset": {"caption": ""}}) for doc in docs]
+        result = collection.bulk_write(operations)
+
+        removed_count += result.modified_count
+        progress = int((removed_count / total_docs) * 100)
+
+        await msg.edit_text(f"Removing captions... {removed_count}/{total_docs} ({progress}%) done...")
+
+    await msg.edit_text(f"Bulk Removal Completed!\nModified {removed_count} documents.")
+
+
 ppath = "plugins/*.py"
 files = glob.glob(ppath)
 TechVJBot.start()
 loop = asyncio.get_event_loop()
-
 
 async def start():
     print('\n')
@@ -110,10 +150,8 @@ async def start():
     await web.TCPSite(app, bind_address, PORT).start()
     await idle()
 
-
 if __name__ == '__main__':
     try:
         loop.run_until_complete(start())
     except KeyboardInterrupt:
         logging.info('Service Stopped Bye 👋')
-
