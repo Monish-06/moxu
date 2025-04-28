@@ -823,7 +823,7 @@ async def settings(client, message):
                 ),
                 InlineKeyboardButton(
                     '✔ Oɴ' if settings["auto_ffilter"] else '✘ Oғғ',
-                    callback_data=f'setgs#auto_ffilter#{settings["auto_ffilter"]}#{grp_id}',
+                    callback_data=f'setgs#auto_ffilter#{settings.get("auto_ffilter", True)}#{grp_id}',
                 ),
             ],
             [
