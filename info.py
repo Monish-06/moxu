@@ -1,7 +1,7 @@
 # Don't Remove Credit @VJ_Botz
 # Subscribe YouTube Channel For Amazing Bot @Tech_VJ
 # Ask Doubt on telegram @KingVJ01
-MONGO_URI = "mongodb+srv://monish280720:hsUe1KPZd5wh5hfD@cluster0.x2rr3kl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+MONGO_URI = ""
 FDATABASE_NAME = "filestore"
 
 import re
@@ -14,7 +14,7 @@ id_pattern = re.compile(r'^.\d+$')
 SESSION = environ.get('SESSION', 'TechVJBot')
 API_ID = int(environ.get('API_ID', '23448804'))
 API_HASH = environ.get('API_HASH', '07a3c7834916cb7a4318026dbf0eac28')
-BOT_TOKEN = environ.get('BOT_TOKEN', "7229764709:AAHTQXoGlGjJ4dIum2ZIEOZ-aQQs1xOtFDg")
+BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 
 # This Pictures Is For Start Message Picture, You Can Add Multiple By Giving One Space Between Each.
