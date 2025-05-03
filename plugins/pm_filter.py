@@ -142,7 +142,7 @@ async def next_page(bot, query):
             for file in files
         ]
 
-        btn.insert(0, 
+        btn.insert(2, 
             [
                 InlineKeyboardButton('ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
                 InlineKeyboardButton("ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{key}"),
@@ -152,13 +152,13 @@ async def next_page(bot, query):
         btn.insert(0, [
             InlineKeyboardButton("How To Download 🎀", url="https://t.me/moxilinktut/3")
         ])
-        btn.insert(0, [
+        btn.insert(1, [
             InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
             InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
         ])
     else:
         btn = []
-        btn.insert(0, 
+        btn.insert(2, 
             [
                 InlineKeyboardButton('ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
                 InlineKeyboardButton("ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{key}"),
@@ -168,7 +168,7 @@ async def next_page(bot, query):
         btn.insert(0, [
             InlineKeyboardButton("How To Download 🎀", url="https://t.me/moxilinktut/3")
         ])
-        btn.insert(0, [
+        btn.insert(1, [
             InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
             InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
         ])
@@ -387,7 +387,7 @@ async def filter_yearss_cb_handler(client: Client, query: CallbackQuery):
             ]
             for file in files
         ]
-        btn.insert(0, 
+        btn.insert(2, 
             [
                 InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
                 InlineKeyboardButton("ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{key}"),
@@ -397,13 +397,13 @@ async def filter_yearss_cb_handler(client: Client, query: CallbackQuery):
         btn.insert(0, [
             InlineKeyboardButton("How To Download 🎀", url="https://t.me/moxilinktut/3")
         ])
-        btn.insert(0, [
+        btn.insert(1, [
             InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
             InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
         ])
     else:
         btn = []
-        btn.insert(0, 
+        btn.insert(2, 
             [
                 InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
                 InlineKeyboardButton("ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{key}"),
@@ -413,7 +413,7 @@ async def filter_yearss_cb_handler(client: Client, query: CallbackQuery):
         btn.insert(0, [
             InlineKeyboardButton("How To Download 🎀", url="https://t.me/moxilinktut/3")
         ])
-        btn.insert(0, [
+        btn.insert(1, [
             InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
             InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
         ])
@@ -557,7 +557,7 @@ async def filter_episodes_cb_handler(client: Client, query: CallbackQuery):
             ]
             for file in files
         ]
-        btn.insert(0, 
+        btn.insert(2, 
             [
                 InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
                 InlineKeyboardButton("ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{key}"),
@@ -567,13 +567,13 @@ async def filter_episodes_cb_handler(client: Client, query: CallbackQuery):
         btn.insert(0, [
             InlineKeyboardButton("How To Download 🎀", url="https://t.me/moxilinktut/3")
         ])
-        btn.insert(0, [
+        btn.insert(1, [
             InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
             InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
         ])
     else:
         btn = []
-        btn.insert(0, 
+        btn.insert(2, 
             [
                 InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
                 InlineKeyboardButton("ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{key}"),
@@ -583,7 +583,7 @@ async def filter_episodes_cb_handler(client: Client, query: CallbackQuery):
         btn.insert(0, [
             InlineKeyboardButton("How To Download 🎀", url="https://t.me/moxilinktut/3")
         ])
-        btn.insert(0, [
+        btn.insert(1, [
             InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
             InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
         ])
@@ -729,7 +729,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
             ]
             for file in files
         ]
-        btn.insert(0, 
+        btn.insert(2, 
             [
                 InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
                 InlineKeyboardButton("ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{key}"),
@@ -739,13 +739,13 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
         btn.insert(0, [
             InlineKeyboardButton("How To Download 🎀", url="https://t.me/moxilinktut/3")
         ])
-        btn.insert(0, [
+        btn.insert(1, [
             InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
             InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
         ])
     else:
         btn = []
-        btn.insert(0, 
+        btn.insert(2, 
             [
                 InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
                 InlineKeyboardButton("ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{key}"),
@@ -755,7 +755,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
         btn.insert(0, [
             InlineKeyboardButton("How To Download 🎀", url="https://t.me/moxilinktut/3")
         ])
-        btn.insert(0, [
+        btn.insert(1, [
             InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
             InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
         ])
@@ -934,7 +934,7 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
             ]
             for file in files
         ]
-        btn.insert(0, 
+        btn.insert(2, 
             [
                 InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
                 InlineKeyboardButton("ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{key}"),
@@ -944,13 +944,13 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
         btn.insert(0, [
             InlineKeyboardButton("How To Download 🎀", url="https://t.me/moxilinktut/3")
         ])
-        btn.insert(0, [
+        btn.insert(1, [
             InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
             InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
         ])
     else:
         btn = []
-        btn.insert(0, 
+        btn.insert(2, 
             [
                 InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
                 InlineKeyboardButton("ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{key}"),
@@ -960,7 +960,7 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
         btn.insert(0, [
             InlineKeyboardButton("How To Download 🎀", url="https://t.me/moxilinktut/3")
         ])
-        btn.insert(0, [
+        btn.insert(1, [
             InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
             InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
         ])
@@ -1076,7 +1076,7 @@ async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
             ]
             for file in files
         ]
-        btn.insert(0, 
+        btn.insert(2, 
             [
                 InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
                 InlineKeyboardButton("ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{key}"),
@@ -1086,13 +1086,13 @@ async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
         btn.insert(0, [
             InlineKeyboardButton("How To Download 🎀", url="https://t.me/moxilinktut/3")
         ])
-        btn.insert(0, [
+        btn.insert(1, [
             InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
             InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
         ])
     else:
         btn = []
-        btn.insert(0, 
+        btn.insert(2, 
             [
                 InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
                 InlineKeyboardButton("ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{key}"),
@@ -1102,7 +1102,7 @@ async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
         btn.insert(0, [
             InlineKeyboardButton("How To Download 🎀", url="https://t.me/moxilinktut/3")
         ])
-        btn.insert(0, [
+        btn.insert(1, [
             InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
             InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
         ])
