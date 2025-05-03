@@ -150,7 +150,9 @@ async def next_page(bot, query):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("Join Now", url="https://t.me/moxi_movies"),
+            InlineKeyboardButton("Join Now", url="https://t.me/moxi_movies")
+        ])
+        btn.insert(0, [
             InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
             InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
         ])
@@ -164,7 +166,9 @@ async def next_page(bot, query):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("Join Now", url="https://t.me/moxi_movies"),
+            InlineKeyboardButton("Join Now", url="https://t.me/moxi_movies")
+        ])
+        btn.insert(0, [
             InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
             InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
         ])
@@ -391,7 +395,9 @@ async def filter_yearss_cb_handler(client: Client, query: CallbackQuery):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("Join Now", url="https://t.me/moxi_movies"),
+            InlineKeyboardButton("Join Now", url="https://t.me/moxi_movies")
+        ])
+        btn.insert(0, [
             InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
             InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
         ])
@@ -405,7 +411,9 @@ async def filter_yearss_cb_handler(client: Client, query: CallbackQuery):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("Join Now", url="https://t.me/moxi_movies"),
+            InlineKeyboardButton("Join Now", url="https://t.me/moxi_movies")
+        ])
+        btn.insert(0, [
             InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
             InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
         ])
@@ -557,7 +565,9 @@ async def filter_episodes_cb_handler(client: Client, query: CallbackQuery):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("Join Now", url="https://t.me/moxi_movies"),
+            InlineKeyboardButton("Join Now", url="https://t.me/moxi_movies")
+        ])
+        btn.insert(0, [
             InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
             InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
         ])
@@ -571,7 +581,9 @@ async def filter_episodes_cb_handler(client: Client, query: CallbackQuery):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("Join Now", url="https://t.me/moxi_movies"),
+            InlineKeyboardButton("Join Now", url="https://t.me/moxi_movies")
+        ])
+        btn.insert(0, [
             InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
             InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
         ])
@@ -725,7 +737,9 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("Join Now", url="https://t.me/moxi_movies"),
+            InlineKeyboardButton("Join Now", url="https://t.me/moxi_movies")
+        ])
+        btn.insert(0, [
             InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
             InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
         ])
@@ -739,7 +753,9 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("Join Now", url="https://t.me/moxi_movies"),
+            InlineKeyboardButton("Join Now", url="https://t.me/moxi_movies")
+        ])
+        btn.insert(0, [
             InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
             InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
         ])
@@ -926,7 +942,9 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("Join Now", url="https://t.me/moxi_movies"),
+            InlineKeyboardButton("Join Now", url="https://t.me/moxi_movies")
+        ])
+        btn.insert(0, [
             InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
             InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
         ])
@@ -940,7 +958,9 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("Join Now", url="https://t.me/moxi_movies"),
+            InlineKeyboardButton("Join Now", url="https://t.me/moxi_movies")
+        ])
+        btn.insert(0, [
             InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
             InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
         ])
@@ -1064,7 +1084,9 @@ async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("Join Now", url="https://t.me/moxi_movies"),
+            InlineKeyboardButton("Join Now", url="https://t.me/moxi_movies")
+        ])
+        btn.insert(0, [
             InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
             InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
         ])
@@ -1078,7 +1100,9 @@ async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("Join Now", url="https://t.me/moxi_movies"),
+            InlineKeyboardButton("Join Now", url="https://t.me/moxi_movies")
+        ])
+        btn.insert(0, [
             InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
             InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
         ])
@@ -1486,7 +1510,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     
     elif query.data.startswith("checksub"):
         if AUTH_CHANNEL and not await is_subscribed(client, query):
-            await query.answer("Jᴏɪɴ ᴏᴜʀ Bᴀᴄᴋ-ᴜᴘ ᴄʜᴀɴɴᴇʟ ᴍᴀʜɴ! 😒", show_alert=True)
+            await query.answer("Jᴏɪɴ ᴏᴜʀ Bᴀᴄᴋ-ᴜᴘ ᴄʜᴀɴɴᴇʟ ᴍᴀɴ! 😒", show_alert=True)
             return
         ident, kk, file_id = query.data.split("#")
         await query.answer(url=f"https://t.me/{temp.U_NAME}?start={kk}_{file_id}")
